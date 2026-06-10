@@ -1,0 +1,379 @@
+Python Notes
+
+(12-03-26)
+
+TPYE CASTING
+
+All other datatypes to int type Casting -->
+
+int(2.3) == 2 #Float to int conversion
+int(True) == 1 # bool to int conversion
+int(1+2j) == #ERROR  -- Complex -int type conversion is not possible
+int('10') == 10 # str to int possible
+int('ten') #text string will not casting from string to int only number string type casting valid.
+
+Type Casting user or developer should not pass more than 1 argument
+
+All other datatype to float casting is possible except text string & complex
+All other datatype to bool possible no issue at all on type casting.
+
+
+
+(13-03-26)
+Type Casting string to complex()
+  User must need to pass only 1 string " if we pass other string then we get error"
+
+all other datatype to int & float except(complex & string text)
+all other datatype to Bool except (no issue) | non argument -- true | zero argument -- false
+all other datatype to complex except ( complex & string text)
+
+Implicit type casting -- automatic Conversion
+Explicit type casting -- manual Conversion
+
+Python Basic Operator--->
+Arithmetic Operator: +, -, * , /, // ,%, **
+Assignment Operator :  == , +=, -=, *=, /=
+Unary Operator : >, <,>=,<=, ==, !=
+Logical Operator : and or not
+
+
+
+
+(16-03-26)
+NUMBER SYSTEM 
+
+Binary (0b)
+Octal (0o)
+Decimal (0x)
+Hexadecimal (0x)
+
+
+Complement Operator -- user need to add +1 and output will return as 16 = -17
+
+
+
+PRINT STATEMENT
+
+1.print() String
+2.print Format method
+3.  .format() number of variable == number of {}.format(number format)
+More short format method ( f string method)
+   every time you no need to .format (short)
+      f string --{variable} curly bracket
+4. print() with end statement
+
+
+
+(17-03-26)
+
+Framework = Collection of packages
+Package = library = collection of module
+Module = collection of Function
+Function = collection of Statements
+
+Function Syntax -->  function():
+1. Inbuilt()
+2. User Define ()
+
+
+FRAMEWORKS -->
+webframework -- Django,flask
+front end framework --fastapi ,streamlit , gradio
+Machine Learning -- scikit learn ,xgboost ,lgbm
+AI Framework --
+   NLP framework -- NLTK,spacy ,genism
+   DL | NN framework -- tensorflow -- OpenCV, medipipe ,yolo
+GenAI framework-- Langchain .Langgraph, Langsmith
+Agentic AI framework -- n8n , crew ai ,smolagent ,agno ai ,phi data , google adk
+
+Python there wont be an constant there be only variable
+
+variable  == object == identifier
+argument == parameter
+excel sheet == dataset
+column name  == attributes  = feature = variable
+
+Math() & Input() function
+
+
+(18-03-26)
+
+Cursor AI 
+
+
+(20-03-26)
+DATA STRUCTURE
+
+====List (MUTUABLE)
+[]
+duplicates are allowed 
+.append() -- add the value at the end of list
+User can define multiple data type within a list | homo & hetro also allowed 
+.clear () -- removes all the elements from the list , but list is present
+del l2 --> deletes the existing list from the variable 
+.copy --> copies one list to another list
+.count() --> Number of occurrences of the element in the list
+.extend() --> adds all the elements of an iterable (such as a list, tuple, set, or string) to the end of the current list  ,  #Passing of two variables within list generates ERROR l2.extend (l,l2) 
+.index[]  --> returns the index of the first element
+.insert(index, object)--> insert object at a specific index , inserting one value at a time
+.pop(index) --> removes the last element and returns the remaining list [without indexing] , if index is mentioned then it pops out the mentioned element
+ # POP REMOVES THE VALUE BY INDEXING WISE
+
+.remove(value) --> # REMOVE THE VALUE BY VALUE
+.reverse --> reverse the list
+.sort () --> sort the list ASCENDING WISE , if .sort( reverse = True) --> sort the list DESCENDING WISE
+
+(23-03-26)
+
+==TUPLE  (IMMUTUABLE)
+()
+Adding elements and  removing  from tuple is not possible
+
+
+== SET  (MUTUABLE)
+{} 
+
+adding duplicate elements in the set is not allowed in the set.
+
+No, indexing and slicing do not work on the set data type in Python. Because sets do not preserve any specific order or position for their items, positional indices have no meaning.
+
+.pop() --> removes and returns and returns an arbitrary elements from a set.
+.pop(3) ==  It does not accept any arguments or indices. bcoz the order is not mentained in the set
+.discard() --> removes a specified element from a set , it does not raise an error if the element does not exist in the set.
+.remove() --> removes a specified element from a set , Raises a KeyError if the element does not exist in the set.
+
+SET OPERATION 
+1.UNION
+
+
+
+
+(24-03-26)
+
+SET OPERATIONS ==
+Union  --> Combines elements from both sets, removing duplicate. set1 | set 2 OR set1.union(set2)
+
+Intersection  --> Keeps only the elements common to both sets. set1 & set2  OR  set1.intersection(set2)
+
+Difference --> Keeps elements present in the first set but not in the second set. set1 - set2  OR  set1.difference(set2) 
+
+Symmetric difference --> Keeps elements present in either set, but not in both. set1 ^ set2 OR  set1.symmetric_difference(set2)
+
+
+symmetric difference update --> Modifies the original set in-place to keep elements unique to each set.  set1 ^= set2  OR set1.symmetric_difference_update(set2)
+
+intersection_update --> Modifies the original set in-place to keep only common elements.
+set1 &= set2  OR set1.intersection_update(set2)
+
+
+superset --> Checks if a set contains all elements of another set, Returns a boolean. set1 >= set2 OR  set1.issuperset(set2)
+
+
+subset-->  Checks if all elements of a set are contained within another set. Returns a Boolean. set1 <= set2  OR  set1.issubset(set2)
+
+
+disjoint --> Checks if two sets have zero elements in common. Returns a boolean.
+set1.isdisjoint(set2)
+
+
+(25-03-26)
+
+=== DICTIONARY (MUTUABLE)
+dictionary {}
+{keys:values}
+duplicate keys are not allowed but values can be duplicate
+keys & values both can be hetrogeneous
+No such type of rule that all keys are integer types & values are string type
+keys & values can any type of object
+
+parameter tuning --> system given parameter
+hyperparameter --> user change the system parameter as per user requirement
+
+
+
+!!!!! NUMPY !!!!!
+
+Converting list to array
+
+my_list=[0,1,2,3,4]
+arr =np.array(my_list)
+
+
+np.arange(start,stop,step) --> [start , stop-1,step]
+np.arange(10)  # prints  from 0 to 9 -- 1D Array
+
+
+np.zeros(5, dtype=int) --> prints zeroes  # 1D Array
+np.zeros((2,2),dtype = int)  --> prints zeros #2D Array
+
+SAME FOR np.ones()
+
+
+# GENERATING RANDOM NUMBERS USING NUNPY
+
+np.random.rand(4)  --> Generates random 4 numbers (float)  # 1D Array
+np.random.randint(4,4)  --> Generates random numbers (int)  # 2D Array
+
+
+
+(26-03-26)
+
+NUMPY CRASH COURSE
+
+randn(3) --> it will generate 3 float number random
+randint(3) --> it will generate the random integer between 0,1,2
+
+len() --> it will print  rows
+shape() --> it will print rows and columns
+
+arange(1,13)--> prints number from 1 to (n-1) i.e 12
+np.arange(1,13).reshape(3,4) --->  prints the number in 1 to 12 in 3x4 matrix format !
+
+
+INDEXING IN NUMPY
+ri[:] --> prints full row and column
+ri[1] --> prints first row
+ri[3:7] --> prints from 3 row to (7-1) row
+
+ri[3,8] --> prints the specific value present in the 3 row & 8 column
+
+ALWAYS REMEMBER  ---->
+in MATRIX  if  : is present then formula will be n-1  applicable
+else  , is present then  n-1 is not applicable . IT prints direct nth mentioned row /column 
+
+
+
+
+(27-03-26)
+
+ARRAY CREATION FUNCTIONALITY
+
+1. Create an array from List
+2. Create an array with evenly spaced values
+3. Create an array filled with zeros
+4.Create an array filled with ones
+5. Create an identity matrix
+
+ARRAY MANIPULATION FUNCTIONS
+
+1. reshape & rearrange
+2. Flattened Array  --> Conversion of any array into 1D Array
+3. Transpose Array --> row converted to column & and column to row
+4. Stack array vertically -->stacks array vertically
+
+eg:- a2 = np.array([1, 2])
+b2 = np.array([3, 4])
+stacked = np.vstack([a2, b2])  # Stack a and b vertically
+print("Stacked arrays:\n", stacked)
+
+
+5. Stack array Horizontally --> Stacks array Horizontally
+
+# Stack arrays horizontal
+a2 = np.array([1, 2])
+b2 = np.array([3, 4])
+stacked = np.hstack([a2, b2])  # Stack a and b horizontally
+print("Stacked arrays:\n", stacked) 
+
+
+MATHEMATICAL FUNCTIONS
+
+1. add--> np.add(array name, number to be added )  # adds  number to the each element in the array
+
+2.power -->    np.power(array name, power by each element)  #powers each element by mentioned number
+
+3.square  -->  np.sqrt(array_name) # quare root of each element
+
+4. dot product ---> np.dot(a,b)
+
+
+
+STATISTICAL FUNCTION
+
+1.mean --> np.mean(a)
+2. Variance --> np.var(a)
+3.Standard Deviation --> np.std(a)
+4. minimum  ---> np.min(a)  # Minimum element in an array
+5. maximin --> np.max(a) # max element in an array
+
+
+LINEAR ALGEBRA FUNCTION
+
+# Create a matrix
+matrix = np.array([[1, 2], [3, 4]]) 
+matrix
+
+
+RANDOM SAMPLING FUNCTION
+1. np.random.randint()
+
+2. np.random.seed(0) ---> initializes the global NumPy pseudo-random number generator with a fixed starting point (a seed value of 0) to ensure your code produces identical random results every time it is run
+
+3.np.random.randint(0, 10, size=5)  --> generates only 5 numbers
+
+BOOLEAN & LOGICAL FUNCTION
+
+1.all --> Check if all elements are True
+
+
+SET OPERATION
+
+1. Intersection  ---> np.intersect1d(set_a, set_b)
+2.Union ---> np.union1d(set_a, set_b)
+
+ARRAY ATTRIBUTE FUNCTION
+
+# Array attributes
+a = np.array([1, 2, 3])
+shape = a.shape  # Shape of the array
+size = a.size    # Number of elements
+dimensions = a.ndim  # Number of dimensions
+dtype = a.dtype   # Data type of the array
+
+print("Shape of a:", shape)
+print("Size of a:", size)
+print("Number of dimensions of a:", dimensions)
+print("Data type of a:", dtype)
+
+
+OTHER  FUNCTIONS
+
+
+1.copy
+
+# Create a copy of an array
+a = np.array([1, 2, 3])
+copied_array = np.copy(a)  # Create a copy of array a
+print("Copied array:", copied_array)
+
+2. Sizwe in bytes
+# Size in bytes of an array
+array_size_in_bytes = a.nbytes  # Size in bytes
+print("Size of a in bytes:", array_size_in_bytes)
+
+
+3.Check if two arrays share memory
+
+# Check if two arrays share memory
+shared = np.shares_memory(a, copied_array)  # Check if arrays share memory
+print("Do a and copied_array share memory?", shared)
+
+
+
+(30-03-26)
+
+IPL DATA ANALYSIS
+
+NUMPY --> library which handles for nd array
+MATPLOTLIB --> library  which handle  for data data visualization
+SEABORN --> library which handles Statistical visulaization | advanced graph
+PANDAS --> library which handles table | dataframe 
+
+data analysis  project --> NP + PLT+ SNS + PD
+
+
+
+
+(31-03-26)
+
+WORKING WITH PANDAS
