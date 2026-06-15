@@ -1,0 +1,68 @@
+ 
+(13-04-26)
+
+======
+EDA
+=====
+
+
+How the EDA will connect ML:-
+1. Variable Identification
+
+family --> 4 members = 4 variable
+
+father = dependent Variable == predicted variable == target  attribute == Y
+mom
+son
+daughter
+Son , daughter & mom -- depens on FATHER , i.e father dependent variable
+
+independent variable -- x --(x1,x2,x3) - independent can be many
+dependent variable -- y
+
+ML -->
+Regeression -- if dependent variable is continuous then we called as regression
+
+Types of ALGORITHM :-
+1.SIMPLE LINEAR REGRESSION ALGORITHM
+2.MULTIPLE LINEAR REGRESSION
+3.POLYNOMIAL REGRESSION
+4. LASSO | L1 REGULARIZATION
+5.RIDGE | L2 REGULARIZATION
+6. K- NEAREST NEIGHBOUR
+7. DECISION TREE REGRESSION
+8. RANDOM FOREST REGRESSION
+9.SUPPORT VECTOR REGRESSION
+10.XTREAM GRADIENT BOOSTING REGRESSION
+11.LIGHT GRADIENT BOOSTING
+12.ANN REGRESSION
+13.TIME SERIES
+14.GD| SGD| BGD
+
+
+CLASSIFICATION -- dependent variable is binary or category
+win|loss
+spam|not spam
+t|f
+
+TYPES OF ALGORITHM :-
+1. LOGISTIC REGRESSION
+2.SUPPORT VECTOR MACHINE
+3.NAVIE BAYES ALGORITHM (BAYESIAN THEOREM | BAYES THEOREM)
+4.DECISION TREE CLASSIFIER
+5.RANDOM FOREST CLASSIFIER
+6.XGBOOST CLASSIFIER
+7.LGBM CLASSIFIER
+8. ANN CLASSIFIER
+9.KNN CLASSIFIER
+
+
+CLUSTERING (Grouping) :- no dependent variable that means if data is discrete
+eg:- kids -> 2or 3
+if the data is discrete then we introduce clustering algo
+
+TYPES OF ALGO :-
+1.K-MEANS
+2.HIRACHICAL CLUSTERING
+3.DBSCAN CLUSTERING
+4. pca ( principal component analysis)
