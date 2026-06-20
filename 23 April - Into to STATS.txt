@@ -1,0 +1,60 @@
+(23-04-26)
+
+
+STATISTICS -->
+1.Population & Sample --
+   population
+   sample
+
+2.type of data --
+  numerical data
+  categorical data
+
+3.descriptive stats --
+  measure of asymmetry ->
+        SKEWNESS
+        KURTOIS
+  measure of variability ->
+       VARIANCE
+       STANDARD DEVIATION
+  measure of central tendency -> MEAN ,MEDIAN , MODE
+
+4.inferential stats --
+   PROBABILITY
+   DISTRIBUTION
+   CONFIDENCE INTERVAL
+   Z- TEST
+   T-TEST
+   Z-TABLE
+   T-TABLE
+   Z-SCORE
+
+5.advanced stats
+    anova -- analysis of variance
+         ssr (sum of squared regressor)
+         sse(sum of square error)
+         sst(sum of square total)
+
+    mae -- mean absolute error
+    mse -- mean square error
+    rmse -- root mean squared error
+    R2
+    adjusted R2
+
+6. How STATS  integration MACHINE LEARNING
+
+Sampling technique --(population --sample)
+Inference technique -- (sample --population)
+
+population -- characteristics (parameter)
+sample -- characteristics (statistics)
+
+
+Random Sample -- roll of dice is generate random sample
+
+Nominal -- cannot keep in any order or any format
+  4 seasons -- sum ,rain ,winter , aut
+             sum , winter
+
+Ordinal -- keep in order rating of the meal 
+  1* , 2*, 3*
