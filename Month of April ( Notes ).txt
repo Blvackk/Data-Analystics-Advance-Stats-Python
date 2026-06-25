@@ -1,0 +1,644 @@
+
+April 
+
+(1-04-26)
+
+===PANDAS===
+
+len() - display only rows
+head() - display above 5 records
+tail() - display bottom 5 records
+.isna() & isnull() - to check missing value
+.isnull().sum() - check the count of missing value
+.info() - it give information about the dataframe
+.shape() - shape of the dataframe
+.columns - display columns
+.describe() - Used for descriptive Stats #bydefault describe provide information of numerical data only  not categorical data
+
+NUMPY VS PANDAS 
+In NumPy ("," operator will work ) but in pandas it do not work
+
+
+Filtering data:-
+df[df['InternetUsers']<2]
+
+applying and condition
+df[(df.BirthRate >40 ) & (df.InternetUsers <2)]
+df ['IncomeGroup'] == 'High income'
+
+Renaming column namec:-
+df.columns = ['a','b','c','d','e']
+
+
+Mathematical operations :-
+df.BirthRate * df.InternetUsers
+df['myCalc'] = df.BirthRate * df.InternetUsers 
+
+
+
+(2-04-26)
+
+Univariate Analysis  -- plot the graph using 1 variable
+Bivariate Analysis -- plot the graph using 2 variable
+Multivariate Analysis -- plot the graph using more than 2 variable 
+
+Outlier -- statistics outlier is the datapoint which is far other observation is called outlier. Outlier also called as ANOMALY DETECTION.
+
+
+numpy(legend) -- it will color the attribute in the code same pandas (hue) -- color the attribute in code.
+
+== ADVANCED PYTHON ==
+if
+else
+nested if
+if elif else
+
+
+
+(4-04-26)
+
+for loop for string datatype
+
+
+if you pass any datatype , datastructure then you must use STRING
+
+
+break
+continue
+pass -- we will be using in method overriding, (polymorphis) , abstract method(abstraction)
+
+conditional statement ---> use case if you have only 1 binary condition (if-else)
+                           Use case more then binary condition (nested if)
+
+VS
+
+While loop  --> Use case if any 1 condition (not binary)  while loop
+
+VS
+
+For loop ---> Use case if data swquence (string , list , tuple , set , dict , range)
+
+
+
+break -- Condition true STOP
+
+continue -- skip that specific position (The continue statement in Python is a loop control keyword that skips the remaining code inside the current iteration and immediately moves the program control to the next cycle of the loop)
+
+pass -- pass ( the pass statement is a null operation that does absolutely nothing when executed)
+
+
+(6-04-26)
+
+
+Frontend application -- Streamlit
+
+STREAMLIT PIPELINE:
+
+pip install streamlit
+1. import streamlit as st
+   st.write('welcome')
+2. save the file as app.py
+3. open cmd OR terminal ->  type  streamlit run app.py
+
+
+ALTERNATIVE PATH TO RUN STREAMLIT ---> 
+python -m streamlit run app.py
+
+
+(7-04-26)
+
+OLLAMA & PYTHON PRINTING
+
+
+(8-04-26)
+ 
+
+OLLAMA -- LLM Model Local
+OLLAMA PROJECT
+
+=============
+Kaggle.com
+uci.com
+huggingface.com
+=================
+
+
+(9-04-26)
+
+Functions are divided into 2 pats -->
+
+User defined -- Created by user, Build by using help of def keyword
+in build -- print(),id(),max(),min()
+
+SYNTAX :-
+def greet():    ---> Defining function
+   print("gm")
+
+greet() ---> Calling function
+
+
+Always print the function using "RETURN" keyword instead of using "PRINT"
+bcoz print  returns NONE type
+While if we use "RETURN" it will give the current variable data type 
+
+Actual Argument is divided into 4 parts :-
+1. Positional argument
+2.Keyword argument
+3.Default Keyword
+4.Variable length argument
+   kwargs (keyword + variable length)
+
+
+
+(10-04-26)
+
+STREAMLIT
+GRADIO
+
+GRADIO --> PLATFORM
+
+
+(13-04-26)
+
+======
+EDA
+=====
+
+
+How the EDA will connect ML:-
+1. Variable Identification
+
+family --> 4 members = 4 variable
+
+father = dependent Variable == predicted variable == target  attribute == Y
+mom
+son
+daughter
+Son , daughter & mom -- depens on FATHER , i.e father dependent variable
+
+independent variable -- x --(x1,x2,x3) - independent can be many
+dependent variable -- y
+
+ML -->
+Regeression -- if dependent variable is continuous then we called as regression
+
+Types of ALGORITHM :-
+1.SIMPLE LINEAR REGRESSION ALGORITHM
+2.MULTIPLE LINEAR REGRESSION
+3.POLYNOMIAL REGRESSION
+4. LASSO | L1 REGULARIZATION
+5.RIDGE | L2 REGULARIZATION
+6. K- NEAREST NEIGHBOUR
+7. DECISION TREE REGRESSION
+8. RANDOM FOREST REGRESSION
+9.SUPPORT VECTOR REGRESSION
+10.XTREAM GRADIENT BOOSTING REGRESSION
+11.LIGHT GRADIENT BOOSTING
+12.ANN REGRESSION
+13.TIME SERIES
+14.GD| SGD| BGD
+
+
+CLASSIFICATION -- dependent variable is binary or category
+win|loss
+spam|not spam
+t|f
+
+TYPES OF ALGORITHM :-
+1. LOGISTIC REGRESSION
+2.SUPPORT VECTOR MACHINE
+3.NAVIE BAYES ALGORITHM (BAYESIAN THEOREM | BAYES THEOREM)
+4.DECISION TREE CLASSIFIER
+5.RANDOM FOREST CLASSIFIER
+6.XGBOOST CLASSIFIER
+7.LGBM CLASSIFIER
+8. ANN CLASSIFIER
+9.KNN CLASSIFIER
+
+
+CLUSTERING (Grouping) :- no dependent variable that means if data is discrete
+eg:- kids -> 2or 3
+if the data is discrete then we introduce clustering algo
+
+TYPES OF ALGO :-
+1.K-MEANS
+2.HIRACHICAL CLUSTERING
+3.DBSCAN CLUSTERING
+4. pca ( principal component analysis)
+
+
+
+
+
+(14-04-26)
+
+
+Corelation -- co + relation , relation among 2 attribute is called corelation
+
+RANGE of CORELATION -->(-1 to 1)
+UNIVARIATE ANALYSIS 
+BIVIRATE ANALYSIS
+
+ +ve corr : 0 to 1
+-ve corr : -1 to 0
+0 corr : 0
+
+Outlier Treatment :
+
+Missing Value Treatment :-
+ if numerical values are missing then mean , meadian & mode strategy
+ if categorical values are missing then mode strategy
+
+What if all value mode is same then what next ?? --> USE KNN 
+
+IMPUTATION TECHNIQUES : also called as transformer
+  dummy variable | one hot encoder
+
+EDA-2
+
+
+
+(15-04-26)
+
+EDA-3
+
+get_dummies --> function used for transformer transform categorical data into numerical data
+
+
+(16-04-26)
+
+INTRODUCTION TO DATABASE
+ & Installation of mySql
+
+(17-04-26)
+
+
+SQL :- 
+Once you make ID as PRIMARY KEY you can't insert any value & it will be always unique. ID column never duplicate because we make id as PRIMARY KEY
+
+Secure way -- we must add COLUMN name & VALUES  
+Insecure way -- we just add VALUES
+
+
+SHARED SOME BOOKS WORK ON IT !
+
+
+(18-04-26)
+
+DELETE any DATA - DML Command & Change  any structure - DDL C0mmand
+
+WILD CARD OPERATORS :-
+a% --> starts with a
+%y  --> ends with y
+
+Pull out the records where second alphabet is'a' then use 2nd WILD OPERATOR
+'_a%' --> second alphabet is a
+'%s_' --. second last alphabet is s
+
+
+
+(20-04-26)
+
+If user want to change entire table structure  -- DDL Command
+if user want to modify any row or column -- DML Command
+
+
+SQL JOINS
+(INNER) JOIN : Returns records that have matching values in both tables
+LEFT (OUTER) JOIN : Returns all records from the left table, and the matched records from the right table
+RIGHT (OUTER) JOIN: Returns all records from the right table , and the matched records from the left table
+FULL(OUTER) JOIN: Returns all records when there is a match in either left or right table
+
+When we works with SQL JOINS it always works with minimum 2 table
+
+CROSS JOIN : combines every row from the first table with every row from the second table, returning the Cartesian product. If Table A has m rows and Table B has n rows, the result will have m × n rows.
+
+
+
+(21-04-26)
+
+DATA ANALYSIS USING SQL V/S DATA ANALYSIS USING PYTHON
+
+
+(22-04-26)
+
+SEABORN ADVANCE GRAPH
+
+
+(23-04-26)
+
+
+STATISTICS -->
+1.Population & Sample --
+   population
+   sample
+
+2.type of data --
+  numerical data
+  categorical data
+
+3.descriptive stats --
+  measure of asymmetry ->
+        SKEWNESS
+        KURTOIS
+  measure of variability ->
+       VARIANCE
+       STANDARD DEVIATION
+  measure of central tendency -> MEAN ,MEDIAN , MODE
+
+4.inferential stats --
+   PROBABILITY
+   DISTRIBUTION
+   CONFIDENCE INTERVAL
+   Z- TEST
+   T-TEST
+   Z-TABLE
+   T-TABLE
+   Z-SCORE
+
+5.advanced stats
+    anova -- analysis of variance
+         ssr (sum of squared regressor)
+         sse(sum of square error)
+         sst(sum of square total)
+
+    mae -- mean absolute error
+    mse -- mean square error
+    rmse -- root mean squared error
+    R2
+    adjusted R2
+
+6. How STATS  integration MACHINE LEARNING
+
+Sampling technique --(population --sample)
+Inference technique -- (sample --population)
+
+population -- characteristics (parameter)
+sample -- characteristics (statistics)
+
+
+Random Sample -- roll of dice is generate random sample
+
+Nominal -- cannot keep in any order or any format
+  4 seasons -- sum ,rain ,winter , aut
+             sum , winter
+
+Ordinal -- keep in order rating of the meal 
+  1* , 2*, 3*
+
+
+
+(24-04-26)
+
+
+============================
+STATISTICS INTRODUCTION
+============================
+
+
+DESCRIPTIVE STATISTICS
+
+Assymetry ---->
+
+Skewness indicates whether the data is concentrated  on which side , either left side or right side
+
+SKEWNESS is divided into 3 :-
+Positive skewness ---> MEAN > MEDIAN & MODE  ( Data is left & Outlier is at right )
+Negative Skewness ---> MODE> MEDIAN > MEAN  ( Data is right & Outlier is  at left
+Zero Skewness ---> MEAN = MEDIAN = MODE ( Data is at centre & no Outlier is present ) 
+
+ZERO SKEWNESS == NORMAL DISTRIBUTION == GAUSSIAN DISTRIBUTION == BELL CURVE == 0 SYMMETRY
+
+
+SKEWNESS == Graphs are Flatten
+KURTOIS == Graphs are tailed
+
++VE skew  =  +VE Kurtois ( Leptokurtic)
+-VE Skew = -VE Kurtois ( Playtykurtic)
+0 Skew = Normal Distribution (Meso Kurtic)
+
+For STATS library --> SciPy
+
+SciPy -- statistical , statistical equation 
+
+
+descriptive stats
+ Central Tendency : Mean , Median , Mode
+ Asymmetry : Skewness & Kurtois
+ Variability : Variance , Standard Deviation
+
+
+MEAN ------->
+ POPULATION MEAN
+ SAMPLE MEAN
+
+VARIANCE : Spread of the data towards MEAN is called VARIANCE
+  POPULATION VARIANCE
+  SAMPLE VARIANCE
+
+if the DATA is not spread towards MEAN , it is called NULL HYPOTHESIS --> we usually reject the NULL HYPOTHESIS.
+
+
+==========
+CORELATION : relation among  2 variable is called corelation
+same concept as corelation , but in STATISTICS it is called "COVARIANCE"
+
+
+
+
+
+(27-04-26)
+
+
+
+
+======================
+INFERENTIAL STATISTICS
+======================
+
+Probability & Distribution
+
+Distribution concept comes from Probability
+
+roll 1 dice -- uniform distribution
+roll 2 dice -- normal diistribution ( mean = median = mode )
+
+==============
+STANDARIZATION  ----> also called Z -Score
+==============
+
+[ In ML , same technique we called as STANDARD SCALER
+In Time Series , same technique called as WHITE NOISE ]
+
+Standardized Variable = Original Variable  - Mean / Standard Deviation
+                        
+
+Machine Learning we will be using 2 concept -- logistic regression algorithm & Navie Bayes algorithm
+probability --- predict the next tokens when internet LLM
+
+
+
+CENTRAL LIMIT THEOREM : Thumb rule o CLT is (SAMPLE SIZE > no. of records)
+
+
+Z- Score  = x - mu / sigma
+CLT = Sigma  > Observation
+Standard Error = Sigma / root n
+
+
+Confidence Interval -->
+ Population = population Variance known (Z -Test)
+ Sample = population Variance unknown  (T-test)
+
+
+Hypothesis Testing  ---------->
+
+95% confidence -- error 5% (5/100 =0.05)
+
+confidence interval -- lower interval & upper interval
+Confidence Level = 1 - alpha  
+
+
+
+Z-TABLE : it is a STATISTICAL TABLE used to calculate z-test
+Z-TEST : Statistical test used for population @95% confidence & 99% confidence interval
+Z-score :Standardization Technique which will be use in MACHINE LEARNING
+
+
+
+
+(28-04-26)
+
+
+T-test -- Sample
+
+Ml -- model which dataset will be using (sample)
+ml -- t-test not  z-test
+
+t-table -- t-table is statisticable to calculate t-test
+t-test -- statistical test on the dataset sample @95% confidence & 99% confidence
+
+
+=============
+ADVANCE STATS :
+==============
+
+
+HYPOTHESIS TESTING ------>
+
+Statement -- Hyderabad apple fruit expensive
+1 apple cost is 1000rs -- hypothesis
+
+This statement needs to be tested -- hypothesis testing
+
+HYPOTHESIS divided into 2 parts :-
+1.NULL HYPOTHESIS  -> H0
+2.ALTERNATIVE HYPOTHESIS  -> H1 or HA
+
+
+if avg apple cost is - 200
+1000
+
+200 != 1000 (reject  the null hypothesis) || if far from mean
+990 ==1000 (accept the null hypothesis)
+
+
+close towards mean -- accept the null hypothesis
+far from mean -- reject the null hypothesis
+
+
+p value in STATS
+
+if 955 confi error - 5% == 5/100 (0.05)
+
+p-value e -- 0.05|0.01
+
+
+INFERENTIAL STATS 
+ prob
+ distribution
+ z-test
+ t-test
+ z-table
+ hypothesis testing
+
+
+https://github.com/kodigitaccount/-STATS-FOR-DA-BA-DS-ML
+
+
+
+(29-04-26)
+
+
+1 - Advance Stats
+    stats towards Machine Learning
+    anova
+    r2
+    adjusted r2
+
+
+Linear regression line -- 
+y = mx+ c        ; y = Actual DATA
+y^ = mx + c      ; y^ = Predicted DATA
+
+
+x - iv 
+y - dv
+m - slope
+c - constant | intercept
+y - actual data
+y^ - predicted data
+
+
+Best Fit Line - the line has least fit error is called best fit line
+ERROR --> Distance between actual point & Predicted point is called ERROR
+
+
+ABSOLUTE ERROR :- (y-y^)
+SQUARE ERROE :- (y-y^)**2
+ROOT MEAN SQUARE ERROR :- np.sqrt(y-y^)
+
+
+
+ANOVA -- Analysis of Variance
+  ML is divided into 3 TYPES :-
+     1. REGRESSION
+     2. CLASSIFICATION
+     3. CLUSTERING
+
+
+
+Performance Measure for Regressions --> R2 & Adjusted R2
+If r2 & adjusted r2 between range of 0-1 then regression model is best model
+
+
+
+SSE (SUM OF SQUARE ERROR) :- ACTUAL POINT - PREDICTED POINT
+SSR (SUM OF SQUARES REGRESSION) :-  PREDICTED POINT - AVERAGE POINT
+SST = SSE + SSR => Actual - average = (actual - prediction ) + ( pred - avg)
+
+
+R2 = 1 - SSR/ SST
+
+If you build regression Model with more attribute then adjusted R2 will come to picture.
+performance measure of regression model :-
+ r2 , adjusted r2
+ range of 0 - 1 | r2 >= adjusted r2  OR adjusted R2 < r2 
+
+
+
+Y = MX + C  [ Simple Linear Regression Algorithm ]
+   1 dv & 1 iv
+   R2 
+
+Y = M1X1 + M2X2 + M3X3 + C [ MULTIPLE LINEAR REGRESSION ALGORTHM ]
+  1 dv & many iv
+  R2 & ADJUSTED R2
+  0 - 1
+  R2 > adjusted R2
+
+
+
+
+(30-04-26) 
+n8n
